@@ -8,7 +8,7 @@
     min-height: 120vh;
     width: 100%;
     background-image:
-        url(background.jpg);
+        url(image/background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -227,7 +227,7 @@ body {
 }
 
 .bmi-bg {
-    background-image: url(pexels-photo-669996.webp);
+    background-image: url(image/pexels-photo-669996.webp);
     background-size: cover;
     /* background: rgb(34,193,195);
 background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);*/
@@ -371,7 +371,7 @@ button#calculate:hover {
 }
 
 .contact-bg {
-    background-image: url(conbg2.jpg);
+    background-image: url(image/conbg2.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -463,7 +463,7 @@ textarea:valid~#label {
 
 /*-------------CSS FOR DIET PAGE---------------*/
 .diet-bg {
-    background-image: url(dibg3.jpg);
+    background-image: url(image/dibg3.jpg);
     background-size: cover;
 
 }
@@ -484,7 +484,7 @@ textarea:valid~#label {
 
 .course-col2 {
     flex-basis: 31%;
-    background-image: url(bgbg.jpg);
+    background-image: url(image/bgbg.jpg);
     /*background: #d37171;*/
     border-radius: 10px;
     margin-bottom: 5%;
@@ -503,7 +503,7 @@ textarea:valid~#label {
 
 #coursecol {
     flex-basis: 31%;
-    background-image: url(bgbg.jpg);
+    background-image: url(image/bgbg.jpg);
     /*   background: #d86565;*/
     border-radius: 10px;
     margin-bottom: 5%;
@@ -587,7 +587,7 @@ h4 {
 
 
 .exercise-bg {
-    background-image: url(exercise-bg.jpg), url(exercise-bg3.jpg), url(exercise-bg2.jpg);
+    background-image: url(image/exercise-bg.jpg), url(image/exercise-bg3.jpg), url(image/exercise-bg2.jpg);
     background-size: contain, contain, cover;
 
 
@@ -610,7 +610,7 @@ h4 {
 .about-header {
     height: 80vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(exercise-bg2.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(image/exercise-bg2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -666,7 +666,7 @@ h4 {
     font-weight: bolder;
     font-style: oblique;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(bgbg.jpg);
+    background-image: url(image/bgbg.jpg);
     font-weight: 900;
 }
 
@@ -703,7 +703,7 @@ h4 {
 .card {
     overflow: hidden;
     padding-left: 50px;
-    background-image: url(bgbgbgbg.png);
+    background-image: url(image/bgbgbgbg.png);
     /*background-color: rgb(202, 149, 103);*/
     border-radius: 30px;
     text-align: center;
