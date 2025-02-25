@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body class="bmi-bg">
+<nav>
+  <a href="index.html"><img height="55px" width="35px" src="logo10.png" </a>
+      <div class="nav-links" id="navLinks">
+         <!---- <i class="fa fa-times" onclick="hideMenu()"></i>---->
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="BMI.html">BMI</a></li>
+              <li><a href="diet.html">DIET</a></li>
+              <li><a href="exercise.html">EXERCISE</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+          </ul>
+      </div>
+      <!--<i class="fa fa-bars" onclick="showMenu()"></i>--->
+</nav>
+<!-------bmi---->
+    <div class="container">
+        <div class="box">
+          <h1>BMI Calculator</h1>
+          <div class="content">
+            <div class="input">
+              <label for="height">Height(cm)</label>
+              <input type="number" id="height">
+            </div>
+            <div class="input">
+              <label for="weight">Weight(kg)</label>
+              <input type="number" id="weight">
+            </div>
+            <button id="calculate">Calculate BMI</button>
+          </div>
+          <div class="result">
+            <p>Your BMI is</p>
+            <div id="result">00.00</div>
+            <div class="a-exercise">
+              <a id="exercise-button" href="exercise.html">Workout</a>&nbsp;
+              <a id="exercise-button" href="diet.html">Diet</a></div>
+            <p class="comment"></p>
+          </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+   
+</body>
+</html>

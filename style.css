@@ -1,0 +1,809 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 120vh;
+    width: 100%;
+    background-image:
+        url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+    height: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 18px 18px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+/*
+nav.fa {
+    display: none;
+}*/
+
+@media(max-width:700px) {
+    .text-box h1 {
+        font-size: 18px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+}
+
+/*   .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:0px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+}
+
+/*-----course---*/
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 8px;
+}
+
+.row {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: #f5e0c9;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover {
+    box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.945);
+}
+
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/*---- footer-------*/
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-image: url(bgbg.jpg);
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 5px;
+    font-weight: 600;
+    color: #000;
+
+}
+
+.icons.fa {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+
+}
+
+.fa-heart-o {
+    color: #f44336;
+}
+
+/* ------------CSS FOR BMI PAGE--------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 160vh;
+
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bmi-bg {
+    background-image: url(pexels-photo-669996.webp);
+    background-size: cover;
+    /* background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);*/
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, 0%);
+}
+
+.box {
+    min-width: 400px;
+    background: #fafafa;
+    border-radius: 38px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15);
+    border-radius: 60px;
+    z-index: -1;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+}
+
+.content {
+    padding: 0 40px;
+}
+
+.input {
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 28px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.input label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.input input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #4f7df9;
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Nunito", sans-serif;
+}
+
+button#calculate {
+    font-family: "Nunito", sans-serif;
+    color: #000000;
+    background: rgb(197, 195, 195);
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: background 0.2s ease;
+}
+
+button#calculate:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.result {
+    padding: 30px 20px;
+}
+
+.result p {
+    font-weight: 600;
+    font-size: 22px;
+    color: #0f0f0f;
+    margin-bottom: 15px;
+}
+
+.result #result {
+    font-size: 36px;
+    font-weight: 900;
+    color: #f44336;
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+
+#comment {
+    color: #4f7df9;
+    font-weight: 800;
+}
+
+#exercise-button {
+    background-color: rgb(197, 195, 195);
+    width: 50%;
+    border-radius: 1rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: #000000;
+    padding: 7px 20px;
+}
+
+#exercise-button:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+/*------CSS FOR CONTACT US PAGE------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+.contact-bg {
+    background-image: url(conbg2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#contact-heading {
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff;
+    text-align: center
+}
+
+#contact-heading:hover {
+
+    color: #f44336;
+    transition: .5s;
+}
+
+.contact-hero {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact-form {
+    width: 90%;
+    max-width: 600px;
+
+}
+
+.input-group {
+    margin-bottom: 25px;
+    position: relative;
+    /*background-color:rgb(13, 63, 42);*/
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 15px;
+}
+
+#label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+
+button {
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+input:focus~#label,
+input:valid~#label,
+textarea:focus~#label,
+textarea:valid~#label {
+    top: -30px;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-group {
+    flex-basis: 48%;
+}
+
+/*-------------CSS FOR DIET PAGE---------------*/
+.diet-bg {
+    background-image: url(dibg3.jpg);
+    background-size: cover;
+
+}
+
+.headingBackground2 {
+    background-color: #3b3737;
+    border: #000000;
+    color: #f44336;
+    width: 28%;
+    border-radius: 1rem;
+}
+
+.row2 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col2 {
+    flex-basis: 31%;
+    background-image: url(bgbg.jpg);
+    /*background: #d37171;*/
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-col2 P {
+    text-align: left;
+}
+
+.course-col2 li {
+    text-align: left;
+}
+
+#coursecol {
+    flex-basis: 31%;
+    background-image: url(bgbg.jpg);
+    /*   background: #d86565;*/
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 35%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+#row2 {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+}
+
+
+#coursecol li {
+    text-align: left;
+}
+
+#coursecol:hover {
+    box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.945);
+}
+
+
+.course-col2:hover {
+    box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.945);
+}
+
+@media(max-width:700px) {
+    .row2 {
+        flex-direction: column;
+    }
+}
+
+/*----------- CSS FOR EXERCISE PAGE-----------*/
+
+.exer-div {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h4 {
+    font-size: 2rem;
+
+    color: #fefafa;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.row1 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col1 {
+    text-align: center;
+    flex-basis: 31%;
+    background: #f5e0c9;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-col li {
+    text-align: left;
+    align-content: center;
+}
+
+.course-col1:hover {
+    box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.945);
+}
+
+
+.exercise-bg {
+    background-image: url(exercise-bg.jpg), url(exercise-bg3.jpg), url(exercise-bg2.jpg);
+    background-size: contain, contain, cover;
+
+
+
+    /*background-repeat: ;*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.headingBackground {
+    background-color: #f44336;
+    width: 20%;
+    border-radius: 1rem;
+}
+
+/*------ CSS for About Us -------*/
+.aboutbody {
+    background-color: silver;
+}
+
+.about-header {
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(exercise-bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+
+}
+
+.about-header h1 {
+    margin-bottom: 100px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+#aboutabout:hover {
+    color: #f44336;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    border: #000;
+}
+
+.column h1 {
+    margin-top: 60px;
+    text-align: center;
+    color: #680505;
+}
+
+.column p {
+    text-align: justify;
+    margin-top: -15px;
+    margin-left: 40px;
+    font-size: large;
+}
+
+.column img {
+    width: 500px;
+    height: 300px;
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 2rem;
+}
+
+.ourteam {
+    text-align: center;
+    padding-top: 650px;
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(bgbg.jpg);
+    font-weight: 900;
+}
+
+/* about us css for card*/
+
+.about-card {
+    align-items: left;
+
+    font-family: 'Poppins',
+        sans-serif;
+    width: 100%;
+    min-height: 26vh;
+    background-color: rgb(42, 18, 18);
+    /*background-image: url(images/bgbg.jpg);*/
+    display: block;
+    justify-content: left;
+    align-items: left;
+}
+
+.container {
+    max-width: 50%;
+    align-items: left;
+
+}
+
+.grid {
+    display: inline-flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+    margin: 10% 0;
+    padding-top: 1050px;
+}
+
+.card {
+    overflow: hidden;
+    padding-left: 50px;
+    background-image: url(bgbgbgbg.png);
+    /*background-color: rgb(202, 149, 103);*/
+    border-radius: 30px;
+    text-align: center;
+}
+
+.card_title {
+    color: #000;
+}
+
+
+.card_img img {
+    width: 190px;
+    ;
+    height: 200px;
+    border-radius: 30px;
+}
+
+.card_body {
+    padding: 26px 20px 36px 20px;
+}
+
+.card_body p {
+    color: #fafafa;
+}
+
+.card_title {
+    font-family: 'Merriweather',
+        serif;
+    font-weight: 900;
+    text-transform: capitalize;
+
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+.card_body p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+
+}
+
+@media only screen and (max-width: 1441px) and (min-width: 1025px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .grid {
+        gap: 2%;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card_body {
+        padding: 15px;
+    }
+
+    .card_title {
+        font-size: 22px;
+        padding-bottom: 14px;
+    }
+
+    .card_body p {
+        font-size: 16px;
+    }
+
+    a.read_more {
+        padding: 19px 0;
+        width: 60%;
+        font-size: 11px;
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .card {
+        padding: 20px 10px;
+    }
+
+    .card_body {
+        padding: 7px;
+    }
+
+    .card_title {
+        font-size: 20px;
+        padding-bottom: 7px;
+    }
+}

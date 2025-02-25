@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF -8">
+    <meta http-equiv="X-UA-Compatible " content="IE=edge ">
+    <meta name="viewport" content="width=device-width,initial-scale = 1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="contact-bg">
+    <nav>
+        <a href="index.html"><img height="55px" width="35px" src="logo10.png" </a>
+            <div class="nav-links" id="navLinks">
+              <!-----  <i class="fa fa-times" onclick="hideMenu()"></i>-->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="BMI.html">BMI</a></li>
+                    <li><a href="diet.html">DIET</a></li>
+                    <li><a href="exercise.html">EXERCISE</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <!---<i class="fa fa-bars" onclick="showMenu()"></i>-->
+    </nav>
+
+
+    <div class="contact-hero">
+        <form class="contact-form" >
+            <h1 id="contact-heading">Contact Us</h1>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" required style="color: white;">
+                    <label for="name" id="label"><i class="fas fa-user"></i> Your Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="number" required style="color: white;">
+                    <label for="number" id="label"><i class="fas fa-phone-square-alt"></i> Phone No.</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" required style="color: white;">
+                <label for="email" id="label"><i class="fas fa-envelope"></i> Email Id</label>
+            </div>
+
+            <div class="input-group">
+                <textarea id="message" rows="8" required style="color: white;"></textarea>
+                <label for="message" id="label"><i class="fas fa-comments"></i> Your Message</label>
+            </div>
+            <input type="button" onClick="mail();" value="SUBMITS" style="color:white"/>
+        </form>
+    </div>
+    <!----java script for smtp server excess----->
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        function mail() 
+        {
+
+            var mname = document.getElementById("name").value;
+            var mnumber = document.getElementById("number").value;
+            var memail = document.getElementById("email").value;
+            var mMessage = document.getElementById("message").value;
+            
+
+
+            var api = "https://docs.google.com/forms/d/e/1FAIpQLSf-TFEdpKSammJ4xmOyOdUD3N-HuzIDHGa_43FdR76lGYj-7g/formResponse?usp=pp_url&entry.319942828="+mname+"&entry.960904508="+mnumber+"&entry.1126810616="+memail+"&entry.251357894="+mMessage;
+            
+
+
+            $.ajax({
+                type: "post",
+                url: api,
+                data: {},
+              
+                success: function (response)
+                {
+                     alert("Thankyou");
+                     $("#name").val("");
+                     $("#number").val("");
+                     $("#email").val("");
+                     $("#message").val("");
+                },
+                failure: function (response) {
+
+                    alert("Thankyou");
+                     $("#name").val("");
+                     $("#number").val("");
+                     $("#email").val("");
+                     $("#message").val("");
+                   
+                },
+                error: function (response) {
+
+                    alert("Thankyou");
+                     $("#name").val("");
+                     $("#number").val("");
+                     $("#email").val("");
+                     $("#message").val("");
+                    
+                }
+            });
+           
+
+
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Fitt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" </head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img height="55px" width="35px" src="logo10.png" </a>
+                <div class="nav-links" id="navLinks">
+                  <!----  <i class="fa fa-times" onclick="hideMenu()"></i>---->
+                    <ul>
+                        <li><a href="index.html">HOME </a></li>
+                        <li><a href="BMI.html">BMI</a></li>
+                        <li><a href="diet.html">DIET</a></li>
+                        <li><a href="exercise.html">EXERCISE</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                    </ul>
+                </div>
+              <!------  <i class="fa fa-bars" onclick="showMenu()"></i>-->
+        </nav>
+        <div class="text-box">
+            <h1>Warm Welcome</h1>
+            <p>Our bodies are capable of anything. It's our mind we have to convince.
+            </p>
+            <a href="about.html" class="hero-btn">visit us to know more</a>
+        </div>
+    </section>
+
+    <!----why we are here-->
+    <section class="course">
+        <h1>Things we offer</h1>
+        <p>All the fitness component are at the same place!</p>
+        <div class="row">
+            <div class="course-col">
+                <h3 >BMI</h3>
+                <p> Body Mass Index (BMI) is a person’s weight in kilograms (or pounds) divided
+                    by the square of height in meters (or feet).
+                </p>
+            </div>
+
+            <div class="course-col">
+                <h3>DIET</h3>
+                <p> Crossfit regular diet chart is prepared according to your BMI which can easily fullfill
+                    your body's necessity as well as help to attain a healthy physique.
+                </p>
+            </div>
+
+            <div class="course-col">
+                <h3>WORKOUT</h3>
+                <p>Categorised exercises are very helpful for beginners and maintain interest.No heavy gym equipments
+                    are needed for workout.
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!-----yyha se start karna h ab 40:50 se video dekhna h bs footer aur kuch kaa ka nhi h-->
+<section class="footer">
+<h4> About us</h4>
+<p>At DR. FITT, we are committed to helping you achieve your fitness goals with top-notch equipment, expert trainers, and a motivating environment.
+    <br> Whether you're a beginner or a pro, we provide the support and community you need to stay strong and healthy." </p>
+    <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i>
+</div>
+<p>made by <i class="fa fa-heart-o"></i>PRINCE CHAUHAN</p>
+    </section>
+
+
+
+    <!-- java script -->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0"
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px"
+            }
+        </script>
+
+
+
+</body>
+
+</html>
